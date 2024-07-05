@@ -1,0 +1,12 @@
+# Игнорируем виртуальную среду
+.venv/
+
+# Игнорируем node_modules
+node_modules/
+
+# Игнорируем файлы пакетов
+package.json
+package-lock.json
+
+# Игнорируем Python файл
+app.py

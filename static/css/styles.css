@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+#loading {
+    display: none;
+}
+
+.list-group-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-bottom: 10px;
+}
+
+.list-group-item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
