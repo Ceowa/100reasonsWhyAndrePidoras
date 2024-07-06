@@ -33,9 +33,40 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 0;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-social a {
+            font-size: 24px;
+            color: #ffffff;
+            margin: 0 10px;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-dark fixed">
+                <a class="navbar-brand" href="reindex.html">АНДРЕЙ 🤓</a>
+            </nav>
+        </div>
+    </div>
+
     <div class="container mt-5">
         <h1 class="text-center mb-4">100 Причин почему Андрей Pidoras</h1>
         <div id="reasons-container" class="list-group"></div>
@@ -44,14 +75,30 @@
         </div>
     </div>
 
+        <div class="footer">
+            <div class="container">
+                <div class="footer-links">
+                    <a href="a.html">О нас</a> |
+                    <a href="p.html">Прайсинг</a> |
+                    <a href="https://ru.wikipedia.org/wiki/GNU_General_Public_License">Лицензия GPL3</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://t.me/gigorgu_gmail"><i class="fab fa-telegram"></i></a>
+                    <a href="https://github.com/Ceowa?tab=repositories"><i class="fab fa-github"></i></a>
+                </div>
+                <p>© 2006-2024 Все права защищены. Ceowa😎. Сделано с любовью.</p>
+            </div>
+        </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     <script>
         $(document).ready(function () {
             let start = 0;
-            const limit = 10;
+            const limit = 18;
             const reasonsContainer = $('#reasons-container');
             const loading = $('#loading');
 
